@@ -1,0 +1,33 @@
+{
+    "include": [
+        "./src/"
+    ],
+    "exclude": [
+        "*.test.ts",
+    ],
+    "ts-node": {
+        // these options are overrides used only by ts-node
+        // same as the --compilerOptions flag and the TS_NODE_COMPILER_OPTIONS environment variable
+        "compilerOptions": {
+            "module": "commonjs"
+        }
+    },
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "rootDir": "./src",
+        "baseUrl": "./src",
+        "module": "esnext",
+        "declaration": true,
+        "declarationDir": "/dist",
+        "sourceMap": false,
+        "noImplicitAny": true,
+        "target": "es6",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+        "allowSyntheticDefaultImports": true
+    }
+}

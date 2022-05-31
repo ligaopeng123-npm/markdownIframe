@@ -1,6 +1,6 @@
 {
-    "name": "markdowniframe",
-    "version": "0.0.1",
+    "name": "@gaopeng123/markdowniframe",
+    "version": "0.0.2",
     "description": "处理markdown文件嵌套",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
@@ -30,6 +30,7 @@
     },
     "scripts": {
         "build": "rollup -c",
+        "push": "npm run build && npm publish --access public",
         "test": "jest --config ./jest.config.js"
     },
     "repository": {
